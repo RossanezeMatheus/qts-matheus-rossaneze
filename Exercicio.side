@@ -1,0 +1,98 @@
+{
+  "id": "87512737-337f-4cb1-b933-e78eaec8f850",
+  "version": "2.0",
+  "name": "Acesso a Amazon",
+  "url": "https://www.amazon.com.br/",
+  "tests": [{
+    "id": "74d90c73-2f10-47d2-b506-d10fb9b60261",
+    "name": "Acesso a Amazon",
+    "commands": [{
+      "id": "5bb205db-fcd9-4b17-a000-90dabdd91a22",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.amazon.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bef54be7-3936-4c7a-851d-500b8dd80c0b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1048",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79fd3e1e-d1a8-4328-86b6-0131fa2cd7e0",
+      "comment": "",
+      "command": "click",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ad7b07d-bae4-4bc1-9e08-cf0f4960dc0a",
+      "comment": "",
+      "command": "type",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "Samsung s23"
+    }, {
+      "id": "02765731-fba7-482d-ae62-818295d165d5",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_DOWN}"
+    }, {
+      "id": "bf60ec23-87f6-4896-afb4-6430c082c607",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=twotabsearchtextbox",
+      "targets": [
+        ["id=twotabsearchtextbox", "id"],
+        ["name=field-keywords", "name"],
+        ["css=#twotabsearchtextbox", "css:finder"],
+        ["xpath=//input[@id='twotabsearchtextbox']", "xpath:attributes"],
+        ["xpath=//form[@id='nav-search-bar-form']/div[3]/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "3b60d0de-a27c-402d-b972-5f64acf82bb3",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,200)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b8242fde-51ca-4b9c-ac33-e3305a11c548",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["74d90c73-2f10-47d2-b506-d10fb9b60261"]
+  }],
+  "urls": ["https://www.amazon.com.br/"],
+  "plugins": []
+}
